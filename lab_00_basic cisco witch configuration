@@ -26,13 +26,13 @@ SW1(config)# enable secret admin123
 ## 6️⃣ Create Management VLAN (Example: VLAN 10)
 ```
 
-SW1(config)# vlan 1
+SW1(config)# vlan 10
 SW1(config-vlan)# name MANAGEMENT
 SW1(config-vlan)# exit
 ```
 ## 7️⃣ Configure VLAN Interface IP (SVI)
 ```
-SW1(config)# interface vlan 1
+SW1(config)# interface vlan 10
 SW1(config-if)# ip address 192.168.10.1 255.255.255.0
 SW1(config-if)# no shutdown
 SW1(config-if)# exit
